@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <title>Salman Mal</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111558147-1"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-111558147-1');
+
+        window.paceOptions = {
+    ajax: {
+        trackMethods: ['GET','POST'],
+        ignoreURLs: ['api/me/GetNotification','api/GetProfilePic']
+    },
+};
+    </script>
+  
+    <style>
+            label.dv-star-rating-star.dv-star-rating-empty-star{
+            font-size: 25px;
+        }
+        label.dv-star-rating-star.dv-star-rating-full-star
+        {
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body class="">
+    <div id="root"></div>
+</body>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvmV61FCU--0feKQ7tF-VQySMYydXQ35s&libraries=geometry,places,visualization" defer="true"></script>
+
+<script type="text/javascript">
+function winopen(url){
+        window.open(url, '_blank');          
+}
+function winopenid(url){
+        window.open(url, '_blank');            
+}
+window.onbeforeunload = function () {
+        window.scrollTo(0,0);}  
+        //history.pushState(null, null, location.href);        window.onpopstate = function () {            history.go(1);        };
+</script>
+</html>

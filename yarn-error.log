@@ -1,0 +1,159 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Salman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add material-ui/core
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\VisualSVN\bin;C:\Program Files\nodejs\;;C:\Program Files\Microsoft VS Code\bin;C:\Users\Salman\AppData\Roaming\npm
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "collabera",
+    "jest": {
+      "collectCoverage": true,
+      "collectCoverageFrom": [
+        "src/**/*.{js,jsx}"
+      ],
+      "coverageDirectory": "<rootDir>/coverage/",
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/build/",
+        "<rootDir>/node_modules/",
+        "<rootDir>/src/store/",
+        "<rootDir>/src/utils/",
+        "<rootDir>/src/containers/collabera/pages/timesheet/Validations.js",
+        "<rootDir>/src/containers/collabera/pages/myProfile/routes.js",
+        "<rootDir>/src/reducers",
+        "<rootDir>/src/axiosConfig.js",
+        "<rootDir>/src/index.js"
+      ],
+      "setupFiles": [
+        "<rootDir>/config/polyfills.js"
+      ],
+      "testPathIgnorePatterns": [
+        "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+      ],
+      "testEnvironment": "node",
+      "testURL": "http://localhost",
+      "transform": {
+        "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+        "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+        "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      },
+      "transformIgnorePatterns": [
+        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+      ],
+      "moduleNameMapper": {
+        "^react-native$": "react-native-web"
+      }
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "axios": "^0.16.2",
+      "pace": "0.0.4",
+      "pace-progress": "^1.0.2",
+      "qs": "^6.5.0",
+      "react": "^15.6.1",
+      "react-day-picker": "^6.1.0",
+      "react-dom": "^15.6.1",
+      "react-facebook-login": "^3.6.2",
+      "react-radio-button": "^1.5.4",
+      "react-redux": "^5.0.5",
+      "react-responsive-carousel": "^3.1.25",
+      "react-router": "^2.8.0",
+      "react-star-rating-component": "^1.4.1",
+      "react-twitter-widgets": "^1.6.1",
+      "redux": "^3.7.2",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.2.0",
+      "sinon": "^3.2.1"
+    },
+    "devDependencies": {
+      "autoprefixer": "6.7.2",
+      "axios-mock-adapter": "^1.9.0",
+      "babel-core": "6.22.1",
+      "babel-eslint": "7.1.1",
+      "babel-jest": "18.0.0",
+      "babel-loader": "6.2.10",
+      "babel-preset-react-app": "^2.2.0",
+      "babel-runtime": "^6.20.0",
+      "case-sensitive-paths-webpack-plugin": "1.1.4",
+      "chalk": "1.1.3",
+      "connect-history-api-fallback": "1.3.0",
+      "cross-spawn": "4.0.2",
+      "css-loader": "0.26.1",
+      "detect-port": "1.1.0",
+      "dotenv": "^2.0.0",
+      "enzyme": "^2.9.1",
+      "eslint": "3.16.1",
+      "eslint-config-react-app": "^0.6.2",
+      "eslint-loader": "1.6.0",
+      "eslint-plugin-flowtype": "2.21.0",
+      "eslint-plugin-import": "2.0.1",
+      "eslint-plugin-jsx-a11y": "4.0.0",
+      "eslint-plugin-react": "6.4.1",
+      "extract-text-webpack-plugin": "1.0.1",
+      "file-loader": "0.10.0",
+      "fs-extra": "0.30.0",
+      "html-webpack-plugin": "2.24.0",
+      "http-proxy-middleware": "0.17.3",
+      "jest": "18.1.0",
+      "json-loader": "0.5.4",
+      "material-ui": "1.0.0-beta.9",
+      "material-ui-icons": "^1.0.0-alpha.19",
+      "moment": "^2.18.1",
+      "node-sass": "^4.5.3",
+      "object-assign": "4.1.1",
+      "postcss-loader": "1.2.2",
+      "promise": "7.1.1",
+      "react-bootstrap": "^0.31.2",
+      "react-dev-utils": "^0.5.2",
+      "react-share": "^1.16.0",
+      "react-test-renderer": "^15.6.1",
+      "redux-mock-store": "^1.2.3",
+      "sass-loader": "^6.0.6",
+      "style-loader": "0.13.1",
+      "url-loader": "0.5.7",
+      "webpack": "^1.14.0",
+      "webpack-dev-server": "1.16.2",
+      "webpack-manifest-plugin": "1.1.0",
+      "whatwg-fetch": "2.0.2"
+    },
+    "scripts": {
+      "start": "node scripts/start.js",
+      "build": "node scripts/build.js",
+      "test": "node scripts/test.js --env=jsdom"
+    },
+    "babel": {
+      "presets": [
+        "react-app"
+      ]
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find the binary git
+      at ProcessSpawnError.MessageError (C:\Users\Salman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessSpawnError (C:\Users\Salman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:201:118)
+      at ChildProcess.<anonymous> (C:\Users\Salman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30237:18)
+      at emitOne (events.js:116:13)
+      at ChildProcess.emit (events.js:211:7)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:196:12)
+      at onErrorNT (internal/child_process.js:372:16)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)

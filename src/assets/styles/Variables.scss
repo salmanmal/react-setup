@@ -1,0 +1,69 @@
+/*color codes*/
+$green: #15A733;
+$white: #ffffff;
+$red: #E44343;
+$blue: #0093C9;
+$profile-bg-light: #008EDD;
+$profile-bg-dark: #0055B8;
+$pill-color: #6A1A6A;
+$tab-focus: #FF9E16;
+$sidebar-active-link: #ffffff;
+$line-blue: #0055B8;
+$grey-color: #CAC8C8;
+$grey-color-opacity: rgba(202,200,200,0.8);
+$expenses-bg-dark : #004A97;
+
+
+
+$light-sky-blue: #e9f3fd;
+$pill-text: #2f3133;
+$black : #000000;
+$contact-bg-dark: $profile-bg-dark;
+$education-bg-dark:$profile-bg-dark;
+$timesheet-blue: #43259e;
+$myskill-bg-blue: $profile-bg-light;
+$calendar-heading: #532faa;
+$myskill-bg-dark: $profile-bg-dark;
+$blue-bg: #dcecfc;
+$faq-color: #f7f7f7;
+$dark-blue: #080d41;
+$sidebar-blue: #0f1723;
+$sidebar-text-color: #a6a8ac;
+$transparent: transparent;
+$light-green-grad: $profile-bg-light;
+$dark-green-grad: $profile-bg-dark;
+$font-color-dark: #001930;
+$grid-divider: rgba(153, 153, 154, 1);
+$green-pill: #4caf50;
+$light-purple-grad: $profile-bg-light;
+$alt-row-color: #f8f9f9;
+$dark-purple-grad: $profile-bg-dark;
+$light-blue: #d0e6fc;
+$error-red: #ff1744;
+/*padding*/
+$standard-padding: 24px;
+$base-unit: 5px;
+/* navbar height*/
+$navbar-height: 64px;
+
+/*font sizes*/
+$big-font: 20px;
+$small-font: 14px;
+$xsmall-font: 12px;
+$xxsmall-font: 10px;
+$mid-font: 16px;
+$medium-font: 18px;
+$hundred: 100;
+$mobile-list-height: 300px;
+$tablet-list-height: 500px;
+$mobile-query: "only screen and (max-width: 600px)";
+$mobile-portrait: "only screen and (max-width : 320px)";
+$mobile-landscape: "only screen and (min-width : 321px)";
+
+$tablet-query: "only screen and (min-width:601px) and (max-width: 960px)";
+$tablet-device-query: "only screen and (max-device-width: 960px)";
+$tablet-portrait: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+$tablet-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
+
+$large-query: "only screen and (min-width: 1824px)";
+$desktop-query: "only screen and (min-width: 960px)";

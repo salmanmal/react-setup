@@ -1,0 +1,281 @@
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.row {
+  flex-wrap: wrap;
+
+}
+
+// Flex additional styles
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+
+.flex-display {
+    display: flex;
+}
+
+.flex-fixed {
+    flex : 0 0 initial;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+.flex-nogrow {
+    flex-grow: 0;
+}
+
+.flex-stretch {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    @extend .flex-display;
+    @extend .flex-nowrap;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      flex-basis: auto !important;
+      padding-top: 4px;
+    }
+    flex : 1;
+}
+
+.flex-stretch-node {
+  @extend .flex-stretch;
+}
+
+.flex-display-baseline {
+    @extend .flex-display;
+    align-items: baseline;
+}
+.row.flex-stretch {
+    flex-direction: row;
+}
+
+
+
+// Some flex related styles to stretch and spread
+.stretch-column-items {
+    flex-direction: column;
+    @extend .flex-stretch;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.stretch-row-items {
+    flex-direction: row;
+
+    @extend .flex-stretch;
+
+}
+
+.stretch-row-items-with-height {
+    @extend .stretch-row-items;
+    height : 100%;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  display: flex;
+}
+
+.flex-baseline {
+  align-items: baseline;
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  display: flex;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+  display: flex;
+}
+
+.flex-vertical-center {
+  align-items: center;
+  display: flex;
+}
+.flex-horizontal-center {
+  justify-content: center;
+  display: flex;
+}
+
+.flex-center-end {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-vertical-bottom {
+  align-items: flex-end;
+  display: flex;
+}
+.flex-vertical-top {
+  align-items: flex-start;
+  display: flex;
+}
+
+.flex-horizontal-end {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-center-space-between {
+  @extend .flex-space-between;
+  align-items: center;
+}
+
+.flex-top-space-between {
+  @extend .flex-space-between;
+  align-items: flex-start;
+}
+
+.flex-right {
+  margin-left: auto;
+}
+
+.row::before{
+  display: none;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-2 {
+    width: 16.66%;
+}
+
+.col-md-4 {
+    width: 33%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-8 {
+    width: 66.66%
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-10 {
+    width: 83.33%;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+@mixin padding($unit) {
+    padding: $unit;
+}
+
+.p-1 {
+    @include padding(10px);
+}
+
+.p-2 {
+    @include padding(20px);
+}
+
+.p-3 {
+    @include padding(30px);
+}
+
+.p-4 {
+    @include padding(40px);
+}
+
+@mixin margin($unit) {
+    margin: $unit;
+}
+
+.m-1 {
+    @include margin(10px);
+}
+
+.m-2 {
+    @include margin(20px);
+}
+
+.m-3 {
+    @include margin(30px);
+}
+
+.m-4 {
+    @include margin(40px);
+}
+
+.white-text {
+    color: $white;
+}
+
+.border-box {
+    box-sizing: border-box
+}
+
+@mixin typography ($fontSize, $fontWeight, $fontStyle) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.horizontal-spacing {
+    padding-right: 12px;
+}
+
+.external-link {
+    color: $black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px;
+    @include typography( $small-font, 900, normal);
+    @media #{$mobile-query} {
+        font-size: $xxsmall-font;
+    }
+}

@@ -1,0 +1,133 @@
+@import '../../assets/styles/Variables.scss';
+@import '../../assets/styles/Helper.scss';
+
+.sidebar {
+    @include typography($small-font, normal, normal);
+    ul {
+        li{
+            padding-left: 0;
+        }
+    }
+    .drawer-root {
+        width: 220px;
+        background-color: $sidebar-blue;
+        @media #{$mobile-query} {
+            width: 250px;
+        } 
+        @media #{$tablet-query} {
+            width: 300px;
+        } 
+    }
+    a.active{
+        color: $sidebar-active-link;
+        // .timesheet-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-timesheet.png');
+        // }
+        // .dashboard-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-dashboard.png');
+        // }
+        // .profile-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-profile.png');
+        // }
+        // .support-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-support.png');
+        // }
+        // .survey-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-survey.png');
+        // }
+        // .redeploy-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-redeploy.png');
+        // }
+        // .referral-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-referrals.png');
+        // }
+        // .contribution-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-contributions.png');
+        // }
+        // .resources-icon {
+        //     background-image: url('../../../../assets/images/sidebar/selected-resources.png');
+        // }
+    }
+    a {
+        color: $sidebar-text-color;
+        text-decoration: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .company-logo {
+        margin: 14% auto;
+        width: 200px;
+        height: auto;
+    }
+
+    h3, span {
+        color: $sidebar-text-color;
+    }
+
+    .sidebar-sublist {
+        margin-left:$base-unit*1.6;
+        li {
+            padding-left: 23%;
+        }
+    }
+    .sidebar-icons {
+        position: relative;
+        padding-right: 5%;
+        width: $base-unit*5;
+        padding-left: 10%;
+        height: $base-unit*5;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // .home-icon {
+    //     background-image: url('../../../../assets/images/sidebar/timesheet-icon.png');
+    // }
+    // .dashboard-icon {
+    //     background-image: url('../../../../assets/images/sidebar/dashboard-icon.png');
+    // }
+    // .profile-icon {
+    //     background-image: url('../../../../assets/images/sidebar/profile-icon.png');
+    // }
+    // .support-icon {
+    //     background-image: url('../../../../assets/images/sidebar/support-icon.png');
+    // }
+    // .survey-icon {
+    //     background-image: url('../../../../assets/images/sidebar/survey-icon.png');
+    // }
+    // .redeploy-icon {
+    //     background-image: url('../../../../assets/images/sidebar/redeploy-me.png');
+    // }
+    // .referral-icon {
+    //     background-image: url('../../../../assets/images/sidebar/referrals.png');
+    // }
+    // .contribution-icon {
+    //     background-image: url('../../../../assets/images/sidebar/contributions.png');
+    // }
+    // .resources-icon {
+    //     background-image: url('../../../../assets/images/sidebar/resources-icon.png');
+    // }
+    // .collapsible-icons {
+    //     top: 2px;
+    //     padding-left: 9%;
+    // }
+
+    .collapsible-item {
+        padding-left: 0;
+        padding-right: 0;
+
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+ /*Remove Following Line During Production Build*/
+// .betaVersion{
+// padding-left:   10px
+// }
+
