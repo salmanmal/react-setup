@@ -11,8 +11,6 @@
       "<rootDir>/node_modules/",
       "<rootDir>/src/store/",
       "<rootDir>/src/utils/",
-      "<rootDir>/src/containers/collabera/pages/timesheet/Validations.js",
-      "<rootDir>/src/containers/collabera/pages/myProfile/routes.js",
       "<rootDir>/src/reducers",
       "<rootDir>/src/axiosConfig.js",
       "<rootDir>/src/index.js"
