@@ -15,6 +15,7 @@ import CsvToExcel from './csvtoexcel/CsvToExcel';
 import PrintExample from './printComponent/RenderComponet';
 import DataTable from './dataTable/DataTableSS';
 import Carasoul from './carasoul';
+import Rohan from './countDown/RohanCountDown';
 
 String.prototype.capitalize = function () {
     return this.toLowerCase().replace(/\b\w/g, function (m) {
@@ -40,6 +41,7 @@ class Main extends Component {
                         <Route path="/printpdf" component={PrintExample} />
                         <Route path="/carasoul" component={Carasoul} />
                         <Route path="/datatable" component={DataTable} />
+                        <Route path="/rohancomingindia" component={Rohan} />
                     </Switch>
                 </App>
             </BrowserRouter>
